@@ -27,7 +27,7 @@
  export LANG=en_US.UTF-8     #
  autoload -U edit-command-line           ###################
  zle -N edit-command-line                # Enables Vi mode #
- bindkey -M vicmd v edit-command-lines   ###################
+ bindkey -M vicmd v edit-command-line    ###################
  WORDCHARS=${WORDCHARS//\/} # Don't consider certain characters part of the word
  zle -N toggle_prompt
  PROMPT_TYPE=full
@@ -121,7 +121,6 @@ fi
 
 
 # addons
-# [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]   && . ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
  [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]           && . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
  [ -f ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]          && . ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
  [ -f ~/.zsh/zsh_command_not_found ]                                 && . ~/.zsh/zsh_command_not_found
