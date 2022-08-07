@@ -31,7 +31,7 @@ fi
 	git clone https://github.com/zsh-users/zsh-autosuggestions		/home/$USER/tmp/.zsh/zsh-autosuggestions/
 	cp -r /home/$USER/tmp/.zsh /home/$USER/
 	rm -rf /home/$USER/tmp/.zsh
-	curl https://gist.githubusercontent.com/BareqAZ/f69c073268d7a9a44a87c0da0e6d13c4/raw/feb933afb1e65f678d3c4c9e80e0973256a5e285/BZSH -o /home/$USER/.zshrc
+	cp .zshrc /home/$USER/.zshrc
 	chsh -s $(which zsh) $USER
 	export SHELL=/bin/zsh
 	CONF_CHECK
