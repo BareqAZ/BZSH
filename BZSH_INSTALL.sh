@@ -70,7 +70,6 @@ This script will install ZSH, ZSH plugins and configure a custom .zshrc
 dependencies:
  -zsh
  -git
- -curl
 dependencies will ask to be installed if not installed already.
 sudo is required if this script will try to install dependencies.
 this script will set your default shell to zsh, changes will appear after login.
