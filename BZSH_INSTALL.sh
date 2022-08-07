@@ -78,7 +78,7 @@ EOF
  read -r -p "Do you want to continue [y/N]" REPLY
  case "$REPLY" in
 	[yY][eE][sS]|[yY])
-		DEP_CHECK "zsh git curl"
+		DEP_CHECK "zsh git"
 		;;
 	*)
 		echo "Exiting..."
