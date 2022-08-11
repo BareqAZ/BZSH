@@ -174,4 +174,3 @@ fi
     fi
 
 select_prompt
-
