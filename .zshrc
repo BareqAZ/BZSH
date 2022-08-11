@@ -40,9 +40,9 @@
  bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	 # deletes a word backwards
  bindkey '^[[3~'   kill-whole-line       # delete                # deletes whole line
  bindkey '^[[1;5A' undo                  # ctrl + arrow up       # undo
- bindkey '^x'	  edit-command-line	 # ctrl + x              # edit line in Vi
- bindkey '^x^e'	  edit-command-line	 # ctrl + x + e          # same but more common keybind
- bindkey '^P'     toggle_prompt          # ctrl + p              # change prompt mode
+ bindkey '^x'	     edit-command-line	    # ctrl + x              # edit line in Vi
+ bindkey '^x^e'	   edit-command-line	    # ctrl + x + e          # same but more common keybind
+ bindkey '^P'      toggle_prompt         # ctrl + p              # change prompt mode
 
 
 #History configurations
@@ -60,7 +60,7 @@ alias history=zsh_history          # force zsh to show the complete history
 
 zsh_history() {
     ARG=$1
-    [ -z $ARG ] && less ~/.zsh_history || grep $1 ~/.zsh_history | sort | uniq -u
+    [ -z $ARG ] && less ~/.zsh_history || grep $1 ~/.zsh_history | sort | uniq -u | less
     }
 
 
